@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-logo">Afra<span>Portfolio</span></div>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://www.linkedin.com/in/afrasiab-turani-309218301/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8lN8H97HRPycR4J7unBtuw%3D%3D" target="_blank" class="nav-linkedin">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+  </svg>
+  LinkedIn
+</a>
+    <button class="nav-cta" onclick="scrollToSection('contact')">Hire me</button>
+    <button class="btn-primary" onclick="scrollToSection('skills')">View my skills</button>
+    <button class="btn-outline" onclick="scrollToSection('contact')">Get in touch</button>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">&#9776;</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#skills" onclick="closeMenu()">Skills</a>
+    <a href="#education" onclick="closeMenu()">Education</a>
+    <a href="#experience" onclick="closeMenu()">Experience</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-wrapper">
+    <div class="hero-content">
+      <div class="hero-badge">Available for entry-level IT roles</div>
+      <h1>Computing graduate<br>&amp; <span class="highlight">IT specialist</span></h1>
+      <p class="hero-sub">
+        Motivated HNC Level 4 Computing graduate with hands-on skills in IT support,
+        web development, networking, and troubleshooting. Seeking an IT Support,
+        Helpdesk, or Junior Technician role.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="scrollTo('skills')">View my skills</button>
+        <button class="btn-outline" onclick="scrollTo('contact')">Get in touch</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-val">4<span>+</span></div>
+          <div class="stat-label">Years of study</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val">3<span>+</span></div>
+          <div class="stat-label">Years work exp</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val">3</div>
+          <div class="stat-label">Languages spoken</div>
+        </div>
+      </div>
+      </div> <!-- end hero-content -->
+
+    <div class="hero-photo">
+      <img src="Images/Profile pic.jpg" alt="Profile photo" />
+    </div>
+
+  </div> <!-- end hero-wrapper -->
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-alt">
+    <div class="container">
+      <div class="section-label">What I bring</div>
+      <h2>Technical skills</h2>
+      <p class="section-desc">A well-rounded technical toolkit built through formal study and hands-on practice.</p>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-card-icon">💻</div>
+          <h3>Software &amp; tools</h3>
+          <div class="skill-tags">
+            <span class="tag">Microsoft Office</span>
+            <span class="tag">Google Workspace</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Wix</span>
+            <span class="tag">Canva</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🌐</div>
+          <h3>Web development</h3>
+          <div class="skill-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Website Design</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🔧</div>
+          <h3>IT support</h3>
+          <div class="skill-tags">
+            <span class="tag">Windows OS</span>
+            <span class="tag">Networking</span>
+            <span class="tag">System Setup</span>
+            <span class="tag">Troubleshooting</span>
+            <span class="tag">Email Config</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🤝</div>
+          <h3>Soft skills</h3>
+          <div class="skill-tags">
+            <span class="tag">Teamwork</span>
+            <span class="tag">Communication</span>
+            <span class="tag">Problem-solving</span>
+            <span class="tag">Documentation</span>
+            <span class="tag">Calm under pressure</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-label">Academic background</div>
+      <h2>Education</h2>
+      <p class="section-desc">Studied at Heart of Worcestershire College, progressing from Level 1 through to HNC Level 4.</p>
+      <div class="edu-timeline">
+
+        <div class="edu-item">
+          <div class="edu-item-head">
+            <h3>HNC Level 4 — Computing</h3>
+            <span class="edu-date">Sep 2025 – May 2026</span>
+          </div>
+          <div class="edu-inst">Heart of Worcestershire College</div>
+          <div class="edu-units">
+            <span class="edu-unit">Programming</span>
+            <span class="edu-unit">Networking</span>
+            <span class="edu-unit">Database Design</span>
+            <span class="edu-unit">Security</span>
+            <span class="edu-unit">Web Development</span>
+            <span class="edu-unit">Software Dev Lifecycles</span>
+            <span class="edu-unit">Professional Practice</span>
+            <span class="edu-unit">Computing Project</span>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-item-head">
+            <h3>BTEC Level 2 — IT Diploma</h3>
+            <span class="edu-date">Sep 2023 – Jun 2024</span>
+          </div>
+          <div class="edu-inst">Heart of Worcestershire College</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-item-head">
+            <h3>BTEC Level 1 — IT Diploma</h3>
+            <span class="edu-date">Sep 2022 – Jun 2023</span>
+          </div>
+          <div class="edu-inst">Heart of Worcestershire College</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-item-head">
+            <h3>GCSE Mathematics — Grade 4</h3>
+            <span class="edu-date">Sep 2024 – Jun 2025</span>
+          </div>
+          <div class="edu-inst">Heart of Worcestershire College</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-item-head">
+            <h3>English Functional Skills Level 2</h3>
+            <span class="edu-date">Sep 2024 – Jun 2026</span>
+          </div>
+          <div class="edu-inst">Heart of Worcestershire College</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-item-head">
+            <h3>Mathematics Functional Skills Level 1</h3>
+            <span class="edu-date">Sep 2022 – Jun 2023</span>
+          </div>
+          <div class="edu-inst">Heart of Worcestershire College</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section-alt">
+    <div class="container">
+      <div class="section-label">Work history</div>
+      <h2>Experience</h2>
+      <p class="section-desc">Professional experience demonstrating reliability, attention to detail, and strong teamwork.</p>
+      <div class="exp-cards">
+
+        <div class="exp-card">
+          <div class="exp-main">
+            <div class="exp-role">Hygiene Technician</div>
+            <div class="exp-company">Insuraclean</div>
+            <ul class="exp-bullets">
+              <li>Followed strict procedures for cleaning high-risk environments</li>
+              <li>Used chemicals and PPE safely and in line with regulations</li>
+              <li>Communicated clearly with supervisors and team members</li>
+              <li>Worked efficiently to meet deadlines and maintain quality standards</li>
+              <li>Demonstrated reliability, attention to detail, and problem-solving</li>
+            </ul>
+          </div>
+          <div class="exp-badge">Aug 2022<br>– May 2025</div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-main">
+            <div class="exp-role">Volunteer Retail Assistant</div>
+            <div class="exp-company">Cancer Research UK</div>
+            <ul class="exp-bullets">
+              <li>Assisted customers and delivered friendly, helpful service</li>
+              <li>Handled cash and card payments using the till</li>
+              <li>Sorted, priced, and displayed donated items on the shop floor</li>
+              <li>Supported fundraising campaigns and charity initiatives</li>
+              <li>Developed strong teamwork and communication skills</li>
+            </ul>
+          </div>
+          <div class="exp-badge">Jan 2023<br>– Jul 2023</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">Who I am</div>
+      <h2>About me</h2>
+      <div class="about-grid">
+
+        <div class="about-left">
+          <div class="about-avatar">IT</div>
+          <p>I am a motivated and self-disciplined Computing graduate with a completed HNC Level 4 in Computing, hands-on experience, and strong technical skills, troubleshooting, and front-end development. Bringing two years of experience as a hygiene technician and retail volunteer, demonstrating teamwork, reliability, and the ability to follow strict procedures. .</p>
+          <p>My work experience has given me a reliable, team-oriented approach and the ability to stay calm and professional under pressure. I aim to apply my knowledge and continue developing professionally and bring diverse communication skills to every role.</p>
+          <div class="lang-badges">
+            <span class="lang-badge">🇬🇧 English</span>
+            <span class="lang-badge">🇮🇷 Persian</span>
+            <span class="lang-badge">🇺🇿 Uzbeki</span>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="info-row">
+            <div class="info-icon">🎓</div>
+            <div>
+              <div class="info-label">Highest qualification</div>
+              <div class="info-val">HNC Level 4 — Computing</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">📍</div>
+            <div>
+              <div class="info-label">Location</div>
+              <div class="info-val">Worcestershire, UK</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">🎯</div>
+            <div>
+              <div class="info-label">Looking for</div>
+              <div class="info-val">IT Support · Helpdesk · Junior Technician</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">💬</div>
+            <div>
+              <div class="info-label">Languages</div>
+              <div class="info-val">English · Persian · Uzbeki</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+<section id="contact" class="section-alt">
+  <div class="container contact-container">
+    <div class="section-label">Let's connect</div>
+    <h2>Get in touch</h2>
+    <p class="section-desc">I'm actively looking for IT Support, Helpdesk, or Junior Technician roles. Fill in the form and I'll get back to you as soon as possible.</p>
+
+    <!-- SUCCESS MESSAGE (hidden by default) -->
+    <div class="form-success" id="formSuccess">
+      <span class="form-success-icon">✅</span>
+      <h3>Message sent!</h3>
+      <p>Thanks for reaching out. I'll get back to you shortly.</p>
+    </div>
+
+    <div class="contact-form-card" id="contactFormCard">
+      <!-- REPLACE YOUR_FORM_ID with your actual Formspree ID -->
+      <form id="contactForm" action="https://formspree.io/f/xbdberno" method="POST" novalidate>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Jane Smith" required />
+            <span class="field-error" id="nameError">Please enter your name.</span>
+          </div>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="e.g. Acme IT Ltd" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@company.com" required />
+          <span class="field-error" id="emailError">Please enter a valid email.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="role">Role / opportunity</label>
+          <select id="role" name="role">
+            <option value="" disabled selected>Select a role type</option>
+            <option value="IT Support">IT Support</option>
+            <option value="Helpdesk">Helpdesk</option>
+            <option value="Junior Technician">Junior Technician</option>
+            <option value="Web Developer">Web Developer</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity or just say hello..." required></textarea>
+          <span class="field-error" id="messageError">Please enter a message.</span>
+        </div>
+
+        <button type="submit" class="btn-primary form-submit" id="submitBtn">
+          <span id="submitText">Send message →</span>
+          <span id="submitSpinner" class="spinner" style="display:none;"></span>
+        </button>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>Built with care · 2026</span>
+    <span class="footer-right">Available for IT opportunities</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
